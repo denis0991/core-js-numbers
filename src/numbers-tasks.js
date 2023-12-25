@@ -328,9 +328,8 @@ function getSumOfDigits(/* num */) {
  *   16  => true
  *   15  => false
  */
-function isPowerOfTwo(num) {
-  const res = num > 0 && (num & (num - 1)) === 0;
-  return res;
+function isPowerOfTwo(/* num */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -483,8 +482,8 @@ function getFloatOnString(/* str */) {
  * '1.234', 2           => 1
  * '10', 8              => 1
  */
-function getIntegerOnString(str, base) {
-  return Number.isNaN(parseInt(str, base)) ? NaN : parseInt(str, base);
+function getIntegerOnString(/* str, base */) {
+  throw new Error('Not implemented');
 }
 
 /**

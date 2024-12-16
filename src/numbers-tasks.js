@@ -475,8 +475,8 @@ function isNumber(value) {
  * 5.1  => false
  * '5'  => false
  */
-function isInteger(/* number */) {
-  throw new Error('Not implemented');
+function isInteger(number) {
+  return Number.isInteger(number);
 }
 
 /**
@@ -489,10 +489,9 @@ function isInteger(/* number */) {
  * '4.567abcdefgh' => 4.567
  * 'abcdefgh'      => NaN
  */
-function getFloatOnString(/* str */) {
-  throw new Error('Not implemented');
+function getFloatOnString(str) {
+  return Number.parseFloat(str);
 }
-
 /**
  * Returns an integer of the specified base or, if the number cannot be parsed
  * from the argument, returns NaN.
@@ -507,8 +506,8 @@ function getFloatOnString(/* str */) {
  * '1.234', 2           => 1
  * '10', 8              => 1
  */
-function getIntegerOnString(/* str, base */) {
-  throw new Error('Not implemented');
+function getIntegerOnString(str, base) {
+  return Number.parseInt(str, base);
 }
 
 /**
@@ -642,8 +641,8 @@ function getRandomInteger(min, max) {
  * @example:
  * 3, 4 => 5
  */
-function getHypotenuse(/* a, b */) {
-  throw new Error('Not implemented');
+function getHypotenuse(a, b) {
+  return Math.hypot(a, b);
 }
 
 /**
